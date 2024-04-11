@@ -10,14 +10,14 @@ local conf_5ceb = {
 	jokersToLoad = {
 		'guaranteejoker',
 		'guiltyjoker',
-		--'lilscamperer', -- not finished, don't load
+		'lilscamperer',
 	},
 
 	loadDebugDeck = true,
 	debugDeckCards = {
 		'guaranteejoker',
 		'guiltyjoker',
-		--'lilscamperer', -- not finished, don't load
+		'lilscamperer',
 	}
 }
 
@@ -46,6 +46,22 @@ end
 
 function SMODS.INIT.fiveceb()
 	local mod = SMODS.findModByID('fiveceb')
+	
+	--functions that are used by many cards go here.
+	localizations = {}
+	function mod.addLocalization(key,str)
+		localizations[key] = str
+	end
+	
+	function mod.getCardPosition(card)
+		for i = 1, #G.jokers.cards do
+			if G.jokers.cards[i] == card then
+				return i
+			end
+		end
+		return nil
+	end
+	
 	
 	local jokerUpdates = {}
 	
@@ -104,6 +120,11 @@ function SMODS.INIT.fiveceb()
 		end
 		card_updateRef(self,dt)
 	end
+	
+	for k,v in pairs(localizations) do
+		G.localization.misc.dictionary[k] = v
+	end
+    init_localization()
 	
 	
 	if conf_5ceb.loadDebugDeck then
