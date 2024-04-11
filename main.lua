@@ -1,7 +1,7 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: 5CEBalatro
 --- MOD_ID: fiveceb
---- MOD_AUTHOR: [DPS2004]
+--- MOD_AUTHOR: [DPS2004, The 5CEB server]
 --- MOD_DESCRIPTION: do jokers have meat?
 --- DISPLAY_NAME: 5CEB
 --- BADGE_COLOUR: FF7519
