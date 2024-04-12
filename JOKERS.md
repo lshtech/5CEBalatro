@@ -19,3 +19,9 @@ Art and concept by [dndryan](https://twitter.com/dndryanart)
 **+2** mult per consecutive hand played where this Joker has been moved beforehand.
 
 Art by DPS2004, concept by DPS2004 and dndryan
+
+# Dunnoker
+
+**X3.8** mult if played hand is the same as the first hand of 5 cards played with this Joker.
+
+Art by DPS2004, concept by Taro4012 and DPS2004

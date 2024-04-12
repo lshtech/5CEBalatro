@@ -12,7 +12,7 @@ local jokerInfo = {
 		'{s:0.8,C:inactive}#2#'
 	},
 	rarity = 3,
-	cost = 2,
+	cost = 5,
 	canBlueprint = false,
 	canEternal = true
 }
