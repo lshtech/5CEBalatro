@@ -8,6 +8,8 @@ Art and concept by Some J Name
 
 **+1** mult per $
 
+Capped at **+40**
+
 **Costs all $ to sell**
 
 Art and concept by [dndryan](https://twitter.com/dndryanart)

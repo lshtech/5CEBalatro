@@ -3,6 +3,7 @@ local jokerInfo = {
 	config = {},
 	text = {
 		'{C:mult}+1{} Mult per $',
+		'Capped at {C:mult}+40{}',
 		'{C:attention}Costs all $ to sell{}',
 		'{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)'
 	},
@@ -14,7 +15,7 @@ local jokerInfo = {
 
 
 function jokerInfo.locDef(self)
-	return {G.GAME.dollars}
+	return {math.min(40,G.GAME.dollars)}
 end
 
 local function updateSellCost(self)
@@ -34,8 +35,8 @@ function jokerInfo.calculate(self, context)
 	updateSellCost(self)
 	if SMODS.end_calculate_context(context) then
 		return {
-			message = localize { type = 'variable', key = 'a_mult', vars = { G.GAME.dollars } },
-			mult_mod = G.GAME.dollars,
+			message = localize { type = 'variable', key = 'a_mult', vars = { math.min(40,G.GAME.dollars) } },
+			mult_mod = math.min(40,G.GAME.dollars),
 		}
 	end
 end
