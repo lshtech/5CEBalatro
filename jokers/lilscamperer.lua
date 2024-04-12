@@ -4,7 +4,7 @@ local jokerInfo = {
 	name = 'Lil\' Scamperer',
 	config = {},
 	text = {
-		'{C:mult}+1{} Mult per consecutive',
+		'{C:mult}+2{} Mult per consecutive',
 		'hand played where',
 		'this Joker has been',
 		'moved beforehand.',
@@ -54,7 +54,7 @@ function jokerInfo.calculate(self, context)
 	if context.before and context.cardarea == G.jokers and context.scoring_hand and (not context.repetition) then
 		if self.ability.extra.movedYet then --was moved
 			self.ability.extra.movedYet = false
-			self.ability.extra.mult = self.ability.extra.mult + 1
+			self.ability.extra.mult = self.ability.extra.mult + 2
 		else --was not moved
 			self.ability.extra.mult = 0
 			return {

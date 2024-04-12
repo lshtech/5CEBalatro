@@ -14,6 +14,6 @@ Art and concept by [dndryan](https://twitter.com/dndryanart)
 
 # Lil' Scamperer
 
-**+1** mult per consecutive hand played where this Joker has been moved beforehand.
+**+2** mult per consecutive hand played where this Joker has been moved beforehand.
 
 Art by DPS2004, concept by DPS2004 and dndryan
