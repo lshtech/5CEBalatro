@@ -11,7 +11,9 @@ local conf_5ceb = {
 		'guaranteejoker',
 		'guiltyjoker',
 		'lilscamperer',
-		'dunnoker'
+		'dunnoker',
+		--'hallofmirrors', unfinished
+		'challenger'
 	},
 
 	loadDebugDeck = true,
@@ -19,7 +21,9 @@ local conf_5ceb = {
 		'guaranteejoker',
 		'guiltyjoker',
 		'lilscamperer',
-		'dunnoker'
+		'dunnoker',
+		--'hallofmirrors', unfinished
+		'challenger'
 	}
 }
 
