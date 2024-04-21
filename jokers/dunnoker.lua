@@ -62,7 +62,7 @@ end
 function jokerInfo.calculate(self, context)
 	if SMODS.end_calculate_context(context) then
 	
-		if #context.full_hand == 5 then
+		if context.full_hand and #context.full_hand == 5 then
 			if self.ability.extra.hasHandYet then
 				local matched = {}
 				local matches = 0
