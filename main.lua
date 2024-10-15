@@ -72,7 +72,8 @@ function SMODS.INIT.fiveceb()
 	local jokerUpdates = {}
 	
 	for i,v in ipairs(conf_5ceb.jokersToLoad) do
-		local jokerInfo = love.filesystem.load(mod.path .. 'jokers/'..v..'.lua')()
+		local jokerInfo = love.filesystem.load('Mods/5CEBalatro/jokers/'..v..'.lua')()
+		
 		fillInDefaults(jokerInfo,jokerInfoDefault)
 		
 		joker = SMODS.Joker:new(
@@ -83,7 +84,7 @@ function SMODS.INIT.fiveceb()
 			jokerInfo.rarity,
 			jokerInfo.cost,
 			true,
-			true,
+			true, --discovered
 			jokerInfo.canBlueprint,
 			jokerInfo.canEternal,
 			jokerInfo.baseEffect
@@ -167,10 +168,10 @@ function SMODS.INIT.fiveceb()
 		}
 		
 		local debugDeckSprite = SMODS.Sprite:new('centers', mod.path, 'Enhancers.png', 71, 95, "asset_atli")
-		debugDeckSprite:register()
+		--debugDeckSprite:register()
 
 		local debugDeck = SMODS.Deck:new("5ceb debug deck", "5cebdebugdeck", {debugdeck = true}, {x = 0, y = 5}, debugDeckLoc)
-		debugDeck:register()
+		--debugDeck:register()
 	end
 
 end
